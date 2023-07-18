@@ -12,19 +12,20 @@ import (
 	"net/url"
 	"os"
 	"path"
+	"path/filepath"
 	"reflect"
 	"strings"
 	"sync"
 	"testing"
 
-	"github.com/dnaeon/go-vcr/cassette"
-	"github.com/dnaeon/go-vcr/recorder"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/resource"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/terraform"
 	"github.com/okta/okta-sdk-golang/v3/okta"
 	"github.com/okta/terraform-provider-okta/sdk"
+	"gopkg.in/dnaeon/go-vcr.v3/cassette"
+	"gopkg.in/dnaeon/go-vcr.v3/recorder"
 )
 
 var (
@@ -399,7 +400,13 @@ func getCachedConfig(ctx context.Context, d *schema.ResourceData, configureFunc 
 	config := c.(*Config)
 	transport := config.oktaClient.GetConfig().HttpClient.Transport
 
-	rec, err := recorder.NewAsMode(mgr.CassettePath(), mgr.VCRMode(), transport)
+	rec, err := recorder.NewWithOptions(&recorder.Options{
+		CassetteName:       mgr.CassettesPath,
+		Mode:               mgr.VCRMode(),
+		SkipRequestLatency: false,
+		RealTransport:      transport,
+	})
+
 	if err != nil {
 		return nil, diag.FromErr(err)
 	}
@@ -445,7 +452,7 @@ func getCachedConfig(ctx context.Context, d *schema.ResourceData, configureFunc 
 		return true
 	})
 
-	rec.AddSaveFilter(func(i *cassette.Interaction) error {
+	rec.AddHook(func(i *cassette.Interaction) error {
 		authHeader := "Authorization"
 		if auth, ok := firstHeaderValue(authHeader, i.Request.Headers); ok {
 			i.Request.Headers.Del(authHeader)
@@ -479,7 +486,7 @@ func getCachedConfig(ctx context.Context, d *schema.ResourceData, configureFunc 
 		}
 
 		return nil
-	})
+	}, recorder.AfterCaptureHook)
 
 	config.oktaClient.GetConfig().HttpClient.Transport = rec
 	providerConfigsLock.Lock()
@@ -532,7 +539,7 @@ func newVCRManager(testName string) *vcrManager {
 	return &vcrManager{
 		Name:            testName,
 		FixturesHome:    vcrFixturesHome,
-		CassettesPath:   cassettesPath,
+		CassettesPath:   path.Join(cassettesPath, os.Getenv("OKTA_VCR_CASSETTE")),
 		CurrentCassette: os.Getenv("OKTA_VCR_CASSETTE"),
 		VCRModeName:     os.Getenv("OKTA_VCR_TF_ACC"),
 	}
@@ -560,7 +567,8 @@ func (m *vcrManager) ValidMode() bool {
 
 // HasCassettesToPlay VCR is in play mode and there are cassette files to play.
 func (m *vcrManager) HasCassettesToPlay() bool {
-	files, err := os.ReadDir(m.CassettesPath)
+	cassetteDir := filepath.Dir(m.CassettesPath)
+	files, err := os.ReadDir(cassetteDir)
 	if err != nil {
 		return false
 	}
@@ -587,10 +595,10 @@ func (m *vcrManager) AttemptedWriteIsMissingCassetteName() bool {
 // VCRMode the recorder.Mode value based on OKTA_VCR_TF_ACC
 func (m *vcrManager) VCRMode() recorder.Mode {
 	if m.VCRModeName == "record" {
-		return recorder.ModeRecording
+		return recorder.ModeRecordOnly
 	}
 
-	return recorder.ModeReplaying
+	return recorder.ModeReplayOnly
 }
 
 // IsPlaying VCR mode is play
