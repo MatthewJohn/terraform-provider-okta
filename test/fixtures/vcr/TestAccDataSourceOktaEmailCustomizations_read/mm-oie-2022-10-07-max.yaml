@@ -1,0 +1,692 @@
+---
+version: 2
+interactions:
+    - id: 0
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 0
+        transfer_encoding: []
+        trailer: {}
+        host: mm-oie-2022-10-07-max.oktapreview.com
+        remote_addr: ""
+        request_uri: ""
+        body: ""
+        form: {}
+        headers:
+            Accept:
+                - application/json
+            Authorization:
+                - SSWS REDACTED
+            User-Agent:
+                - okta-sdk-golang/3.0.0 golang/go1.20.6 darwin/amd64 okta-terraform/4.1.0
+        url: https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands
+        method: GET
+      response:
+        proto: HTTP/2.0
+        proto_major: 2
+        proto_minor: 0
+        transfer_encoding: []
+        trailer: {}
+        content_length: -1
+        uncompressed: true
+        body: '[{"id":"bnd5qwjvgpotf2LV51d7","name":"New Brand","removePoweredByOkta":true,"customPrivacyPolicyUrl":"https://example.com/privacy-policy-updated","agreeToCustomPrivacyPolicy":true,"isDefault":true,"defaultApp":{"appInstanceId":null,"appLinkName":null,"classicApplicationUri":null},"_links":{"themes":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd5qwjvgpotf2LV51d7/themes","hints":{"allow":["GET"]}},"self":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd5qwjvgpotf2LV51d7","hints":{"allow":["GET","PUT","DELETE"]}}}},{"id":"bnd8zt703iTQDr8u81d7","name":"www.example.com","removePoweredByOkta":false,"customPrivacyPolicyUrl":null,"agreeToCustomPrivacyPolicy":false,"isDefault":false,"defaultApp":{"appInstanceId":"0oa5qwjvixUgETvka1d7","appLinkName":null,"classicApplicationUri":null},"_links":{"themes":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/themes","hints":{"allow":["GET"]}},"self":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7","hints":{"allow":["GET","PUT","DELETE"]}}}}]'
+        headers:
+            Content-Type:
+                - application/json
+            Date:
+                - Wed, 19 Jul 2023 22:51:34 GMT
+            Link:
+                - <https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands?limit=20>; rel="self"
+        status: 200 OK
+        code: 200
+        duration: 154.535254ms
+    - id: 1
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 0
+        transfer_encoding: []
+        trailer: {}
+        host: mm-oie-2022-10-07-max.oktapreview.com
+        remote_addr: ""
+        request_uri: ""
+        body: ""
+        form: {}
+        headers:
+            Accept:
+                - application/json
+            Authorization:
+                - SSWS REDACTED
+            User-Agent:
+                - okta-sdk-golang/3.0.0 golang/go1.20.6 darwin/amd64 okta-terraform/4.1.0
+        url: https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands
+        method: GET
+      response:
+        proto: HTTP/2.0
+        proto_major: 2
+        proto_minor: 0
+        transfer_encoding: []
+        trailer: {}
+        content_length: -1
+        uncompressed: true
+        body: '[{"id":"bnd5qwjvgpotf2LV51d7","name":"New Brand","removePoweredByOkta":true,"customPrivacyPolicyUrl":"https://example.com/privacy-policy-updated","agreeToCustomPrivacyPolicy":true,"isDefault":true,"defaultApp":{"appInstanceId":null,"appLinkName":null,"classicApplicationUri":null},"_links":{"themes":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd5qwjvgpotf2LV51d7/themes","hints":{"allow":["GET"]}},"self":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd5qwjvgpotf2LV51d7","hints":{"allow":["GET","PUT","DELETE"]}}}},{"id":"bnd8zt703iTQDr8u81d7","name":"www.example.com","removePoweredByOkta":false,"customPrivacyPolicyUrl":null,"agreeToCustomPrivacyPolicy":false,"isDefault":false,"defaultApp":{"appInstanceId":"0oa5qwjvixUgETvka1d7","appLinkName":null,"classicApplicationUri":null},"_links":{"themes":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/themes","hints":{"allow":["GET"]}},"self":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7","hints":{"allow":["GET","PUT","DELETE"]}}}}]'
+        headers:
+            Content-Type:
+                - application/json
+            Date:
+                - Wed, 19 Jul 2023 22:51:35 GMT
+            Link:
+                - <https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands?limit=20>; rel="self"
+        status: 200 OK
+        code: 200
+        duration: 74.046083ms
+    - id: 2
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 152
+        transfer_encoding: []
+        trailer: {}
+        host: mm-oie-2022-10-07-max.oktapreview.com
+        remote_addr: ""
+        request_uri: ""
+        body: |
+            {"body":"Hi $$user.firstName,\u003cbr/\u003e\u003cbr/\u003eBlah blah $$resetPasswordLink","isDefault":true,"language":"en","subject":"Forgot Password"}
+        form: {}
+        headers:
+            Accept:
+                - application/json
+            Authorization:
+                - SSWS REDACTED
+            Content-Type:
+                - application/json
+            User-Agent:
+                - okta-sdk-golang/3.0.0 golang/go1.20.6 darwin/amd64 okta-terraform/4.1.0
+        url: https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations
+        method: POST
+      response:
+        proto: HTTP/2.0
+        proto_major: 2
+        proto_minor: 0
+        transfer_encoding: []
+        trailer: {}
+        content_length: -1
+        uncompressed: false
+        body: '{"subject":"Forgot Password","body":"Hi $$user.firstName,<br/><br/>Blah blah $$resetPasswordLink","id":"oel8ztbhtqYQFijNs1d7","language":"en","isDefault":true,"created":"2023-07-19T22:51:35.000Z","lastUpdated":"2023-07-19T22:51:35.000Z","_links":{"preview":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztbhtqYQFijNs1d7/preview","hints":{"allow":["GET"]}},"template":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword","hints":{"allow":["GET"]}},"settings":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/settings","hints":{"allow":["GET","PUT"]}},"self":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztbhtqYQFijNs1d7","hints":{"allow":["GET","PUT","DELETE"]}},"test":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/test","hints":{"allow":["POST"]}}}}'
+        headers:
+            Content-Type:
+                - application/json
+            Date:
+                - Wed, 19 Jul 2023 22:51:35 GMT
+        status: 201 Created
+        code: 201
+        duration: 71.155223ms
+    - id: 3
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 174
+        transfer_encoding: []
+        trailer: {}
+        host: mm-oie-2022-10-07-max.oktapreview.com
+        remote_addr: ""
+        request_uri: ""
+        body: |
+            {"body":"Hola $$user.firstName,\u003cbr/\u003e\u003cbr/\u003ePuedo ir al bano $$resetPasswordLink","isDefault":false,"language":"es","subject":"Has olvidado tu contraseña"}
+        form: {}
+        headers:
+            Accept:
+                - application/json
+            Authorization:
+                - SSWS REDACTED
+            Content-Type:
+                - application/json
+            User-Agent:
+                - okta-sdk-golang/3.0.0 golang/go1.20.6 darwin/amd64 okta-terraform/4.1.0
+        url: https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations
+        method: POST
+      response:
+        proto: HTTP/2.0
+        proto_major: 2
+        proto_minor: 0
+        transfer_encoding: []
+        trailer: {}
+        content_length: -1
+        uncompressed: false
+        body: '{"subject":"Has olvidado tu contraseña","body":"Hola $$user.firstName,<br/><br/>Puedo ir al bano $$resetPasswordLink","id":"oel8ztfnm26ebKTMP1d7","language":"es","isDefault":false,"created":"2023-07-19T22:51:35.000Z","lastUpdated":"2023-07-19T22:51:35.000Z","_links":{"preview":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztfnm26ebKTMP1d7/preview","hints":{"allow":["GET"]}},"template":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword","hints":{"allow":["GET"]}},"settings":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/settings","hints":{"allow":["GET","PUT"]}},"self":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztfnm26ebKTMP1d7","hints":{"allow":["GET","PUT","DELETE"]}},"test":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/test","hints":{"allow":["POST"]}}}}'
+        headers:
+            Content-Type:
+                - application/json
+            Date:
+                - Wed, 19 Jul 2023 22:51:35 GMT
+        status: 201 Created
+        code: 201
+        duration: 75.329107ms
+    - id: 4
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 0
+        transfer_encoding: []
+        trailer: {}
+        host: mm-oie-2022-10-07-max.oktapreview.com
+        remote_addr: ""
+        request_uri: ""
+        body: ""
+        form: {}
+        headers:
+            Accept:
+                - application/json
+            Authorization:
+                - SSWS REDACTED
+            User-Agent:
+                - okta-sdk-golang/3.0.0 golang/go1.20.6 darwin/amd64 okta-terraform/4.1.0
+        url: https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations
+        method: GET
+      response:
+        proto: HTTP/2.0
+        proto_major: 2
+        proto_minor: 0
+        transfer_encoding: []
+        trailer: {}
+        content_length: -1
+        uncompressed: true
+        body: '[{"subject":"Forgot Password","body":"Hi $$user.firstName,<br/><br/>Blah blah $$resetPasswordLink","id":"oel8ztbhtqYQFijNs1d7","language":"en","isDefault":true,"created":"2023-07-19T22:51:35.000Z","lastUpdated":"2023-07-19T22:51:35.000Z","_links":{"preview":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztbhtqYQFijNs1d7/preview","hints":{"allow":["GET"]}},"template":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword","hints":{"allow":["GET"]}},"settings":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/settings","hints":{"allow":["GET","PUT"]}},"self":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztbhtqYQFijNs1d7","hints":{"allow":["GET","PUT","DELETE"]}},"test":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/test","hints":{"allow":["POST"]}}}},{"subject":"Has olvidado tu contraseña","body":"Hola $$user.firstName,<br/><br/>Puedo ir al bano $$resetPasswordLink","id":"oel8ztfnm26ebKTMP1d7","language":"es","isDefault":false,"created":"2023-07-19T22:51:35.000Z","lastUpdated":"2023-07-19T22:51:35.000Z","_links":{"preview":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztfnm26ebKTMP1d7/preview","hints":{"allow":["GET"]}},"template":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword","hints":{"allow":["GET"]}},"settings":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/settings","hints":{"allow":["GET","PUT"]}},"self":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztfnm26ebKTMP1d7","hints":{"allow":["GET","PUT","DELETE"]}},"test":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/test","hints":{"allow":["POST"]}}}}]'
+        headers:
+            Content-Type:
+                - application/json
+            Date:
+                - Wed, 19 Jul 2023 22:51:35 GMT
+            Link:
+                - <https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations?limit=10>; rel="self"
+        status: 200 OK
+        code: 200
+        duration: 117.376661ms
+    - id: 5
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 0
+        transfer_encoding: []
+        trailer: {}
+        host: mm-oie-2022-10-07-max.oktapreview.com
+        remote_addr: ""
+        request_uri: ""
+        body: ""
+        form: {}
+        headers:
+            Accept:
+                - application/json
+            Authorization:
+                - SSWS REDACTED
+            User-Agent:
+                - okta-sdk-golang/3.0.0 golang/go1.20.6 darwin/amd64 okta-terraform/4.1.0
+        url: https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands
+        method: GET
+      response:
+        proto: HTTP/2.0
+        proto_major: 2
+        proto_minor: 0
+        transfer_encoding: []
+        trailer: {}
+        content_length: -1
+        uncompressed: true
+        body: '[{"id":"bnd5qwjvgpotf2LV51d7","name":"New Brand","removePoweredByOkta":true,"customPrivacyPolicyUrl":"https://example.com/privacy-policy-updated","agreeToCustomPrivacyPolicy":true,"isDefault":true,"defaultApp":{"appInstanceId":null,"appLinkName":null,"classicApplicationUri":null},"_links":{"themes":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd5qwjvgpotf2LV51d7/themes","hints":{"allow":["GET"]}},"self":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd5qwjvgpotf2LV51d7","hints":{"allow":["GET","PUT","DELETE"]}}}},{"id":"bnd8zt703iTQDr8u81d7","name":"www.example.com","removePoweredByOkta":false,"customPrivacyPolicyUrl":null,"agreeToCustomPrivacyPolicy":false,"isDefault":false,"defaultApp":{"appInstanceId":"0oa5qwjvixUgETvka1d7","appLinkName":null,"classicApplicationUri":null},"_links":{"themes":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/themes","hints":{"allow":["GET"]}},"self":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7","hints":{"allow":["GET","PUT","DELETE"]}}}}]'
+        headers:
+            Content-Type:
+                - application/json
+            Date:
+                - Wed, 19 Jul 2023 22:51:36 GMT
+            Link:
+                - <https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands?limit=20>; rel="self"
+        status: 200 OK
+        code: 200
+        duration: 59.729736ms
+    - id: 6
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 0
+        transfer_encoding: []
+        trailer: {}
+        host: mm-oie-2022-10-07-max.oktapreview.com
+        remote_addr: ""
+        request_uri: ""
+        body: ""
+        form: {}
+        headers:
+            Accept:
+                - application/json
+            Authorization:
+                - SSWS REDACTED
+            User-Agent:
+                - okta-sdk-golang/3.0.0 golang/go1.20.6 darwin/amd64 okta-terraform/4.1.0
+        url: https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations
+        method: GET
+      response:
+        proto: HTTP/2.0
+        proto_major: 2
+        proto_minor: 0
+        transfer_encoding: []
+        trailer: {}
+        content_length: -1
+        uncompressed: true
+        body: '[{"subject":"Forgot Password","body":"Hi $$user.firstName,<br/><br/>Blah blah $$resetPasswordLink","id":"oel8ztbhtqYQFijNs1d7","language":"en","isDefault":true,"created":"2023-07-19T22:51:35.000Z","lastUpdated":"2023-07-19T22:51:35.000Z","_links":{"preview":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztbhtqYQFijNs1d7/preview","hints":{"allow":["GET"]}},"template":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword","hints":{"allow":["GET"]}},"settings":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/settings","hints":{"allow":["GET","PUT"]}},"self":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztbhtqYQFijNs1d7","hints":{"allow":["GET","PUT","DELETE"]}},"test":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/test","hints":{"allow":["POST"]}}}},{"subject":"Has olvidado tu contraseña","body":"Hola $$user.firstName,<br/><br/>Puedo ir al bano $$resetPasswordLink","id":"oel8ztfnm26ebKTMP1d7","language":"es","isDefault":false,"created":"2023-07-19T22:51:35.000Z","lastUpdated":"2023-07-19T22:51:35.000Z","_links":{"preview":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztfnm26ebKTMP1d7/preview","hints":{"allow":["GET"]}},"template":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword","hints":{"allow":["GET"]}},"settings":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/settings","hints":{"allow":["GET","PUT"]}},"self":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztfnm26ebKTMP1d7","hints":{"allow":["GET","PUT","DELETE"]}},"test":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/test","hints":{"allow":["POST"]}}}}]'
+        headers:
+            Content-Type:
+                - application/json
+            Date:
+                - Wed, 19 Jul 2023 22:51:36 GMT
+            Link:
+                - <https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations?limit=10>; rel="self"
+            Report-To:
+                - '{"group":"csp","max_age":31536000,"endpoints":[{"url":"https://oktacsp.report-uri.com/a/t/g"}],"include_subdomains":true}'
+        status: 200 OK
+        code: 200
+        duration: 78.371498ms
+    - id: 7
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 0
+        transfer_encoding: []
+        trailer: {}
+        host: mm-oie-2022-10-07-max.oktapreview.com
+        remote_addr: ""
+        request_uri: ""
+        body: ""
+        form: {}
+        headers:
+            Accept:
+                - application/json
+            Authorization:
+                - SSWS REDACTED
+            User-Agent:
+                - okta-sdk-golang/3.0.0 golang/go1.20.6 darwin/amd64 okta-terraform/4.1.0
+        url: https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands
+        method: GET
+      response:
+        proto: HTTP/2.0
+        proto_major: 2
+        proto_minor: 0
+        transfer_encoding: []
+        trailer: {}
+        content_length: -1
+        uncompressed: true
+        body: '[{"id":"bnd5qwjvgpotf2LV51d7","name":"New Brand","removePoweredByOkta":true,"customPrivacyPolicyUrl":"https://example.com/privacy-policy-updated","agreeToCustomPrivacyPolicy":true,"isDefault":true,"defaultApp":{"appInstanceId":null,"appLinkName":null,"classicApplicationUri":null},"_links":{"themes":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd5qwjvgpotf2LV51d7/themes","hints":{"allow":["GET"]}},"self":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd5qwjvgpotf2LV51d7","hints":{"allow":["GET","PUT","DELETE"]}}}},{"id":"bnd8zt703iTQDr8u81d7","name":"www.example.com","removePoweredByOkta":false,"customPrivacyPolicyUrl":null,"agreeToCustomPrivacyPolicy":false,"isDefault":false,"defaultApp":{"appInstanceId":"0oa5qwjvixUgETvka1d7","appLinkName":null,"classicApplicationUri":null},"_links":{"themes":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/themes","hints":{"allow":["GET"]}},"self":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7","hints":{"allow":["GET","PUT","DELETE"]}}}}]'
+        headers:
+            Content-Type:
+                - application/json
+            Date:
+                - Wed, 19 Jul 2023 22:51:36 GMT
+            Link:
+                - <https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands?limit=20>; rel="self"
+        status: 200 OK
+        code: 200
+        duration: 80.003809ms
+    - id: 8
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 0
+        transfer_encoding: []
+        trailer: {}
+        host: mm-oie-2022-10-07-max.oktapreview.com
+        remote_addr: ""
+        request_uri: ""
+        body: ""
+        form: {}
+        headers:
+            Accept:
+                - application/json
+            Authorization:
+                - SSWS REDACTED
+            User-Agent:
+                - okta-sdk-golang/3.0.0 golang/go1.20.6 darwin/amd64 okta-terraform/4.1.0
+        url: https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztbhtqYQFijNs1d7
+        method: GET
+      response:
+        proto: HTTP/2.0
+        proto_major: 2
+        proto_minor: 0
+        transfer_encoding: []
+        trailer: {}
+        content_length: -1
+        uncompressed: true
+        body: '{"subject":"Forgot Password","body":"Hi $$user.firstName,<br/><br/>Blah blah $$resetPasswordLink","id":"oel8ztbhtqYQFijNs1d7","language":"en","isDefault":true,"created":"2023-07-19T22:51:35.000Z","lastUpdated":"2023-07-19T22:51:35.000Z","_links":{"preview":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztbhtqYQFijNs1d7/preview","hints":{"allow":["GET"]}},"template":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword","hints":{"allow":["GET"]}},"settings":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/settings","hints":{"allow":["GET","PUT"]}},"self":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztbhtqYQFijNs1d7","hints":{"allow":["GET","PUT","DELETE"]}},"test":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/test","hints":{"allow":["POST"]}}}}'
+        headers:
+            Content-Type:
+                - application/json
+            Date:
+                - Wed, 19 Jul 2023 22:51:36 GMT
+        status: 200 OK
+        code: 200
+        duration: 70.670768ms
+    - id: 9
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 0
+        transfer_encoding: []
+        trailer: {}
+        host: mm-oie-2022-10-07-max.oktapreview.com
+        remote_addr: ""
+        request_uri: ""
+        body: ""
+        form: {}
+        headers:
+            Accept:
+                - application/json
+            Authorization:
+                - SSWS REDACTED
+            User-Agent:
+                - okta-sdk-golang/3.0.0 golang/go1.20.6 darwin/amd64 okta-terraform/4.1.0
+        url: https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztfnm26ebKTMP1d7
+        method: GET
+      response:
+        proto: HTTP/2.0
+        proto_major: 2
+        proto_minor: 0
+        transfer_encoding: []
+        trailer: {}
+        content_length: -1
+        uncompressed: true
+        body: '{"subject":"Has olvidado tu contraseña","body":"Hola $$user.firstName,<br/><br/>Puedo ir al bano $$resetPasswordLink","id":"oel8ztfnm26ebKTMP1d7","language":"es","isDefault":false,"created":"2023-07-19T22:51:35.000Z","lastUpdated":"2023-07-19T22:51:35.000Z","_links":{"preview":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztfnm26ebKTMP1d7/preview","hints":{"allow":["GET"]}},"template":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword","hints":{"allow":["GET"]}},"settings":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/settings","hints":{"allow":["GET","PUT"]}},"self":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztfnm26ebKTMP1d7","hints":{"allow":["GET","PUT","DELETE"]}},"test":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/test","hints":{"allow":["POST"]}}}}'
+        headers:
+            Content-Type:
+                - application/json
+            Date:
+                - Wed, 19 Jul 2023 22:51:37 GMT
+        status: 200 OK
+        code: 200
+        duration: 88.948682ms
+    - id: 10
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 0
+        transfer_encoding: []
+        trailer: {}
+        host: mm-oie-2022-10-07-max.oktapreview.com
+        remote_addr: ""
+        request_uri: ""
+        body: ""
+        form: {}
+        headers:
+            Accept:
+                - application/json
+            Authorization:
+                - SSWS REDACTED
+            User-Agent:
+                - okta-sdk-golang/3.0.0 golang/go1.20.6 darwin/amd64 okta-terraform/4.1.0
+        url: https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations
+        method: GET
+      response:
+        proto: HTTP/2.0
+        proto_major: 2
+        proto_minor: 0
+        transfer_encoding: []
+        trailer: {}
+        content_length: -1
+        uncompressed: true
+        body: '[{"subject":"Forgot Password","body":"Hi $$user.firstName,<br/><br/>Blah blah $$resetPasswordLink","id":"oel8ztbhtqYQFijNs1d7","language":"en","isDefault":true,"created":"2023-07-19T22:51:35.000Z","lastUpdated":"2023-07-19T22:51:35.000Z","_links":{"preview":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztbhtqYQFijNs1d7/preview","hints":{"allow":["GET"]}},"template":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword","hints":{"allow":["GET"]}},"settings":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/settings","hints":{"allow":["GET","PUT"]}},"self":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztbhtqYQFijNs1d7","hints":{"allow":["GET","PUT","DELETE"]}},"test":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/test","hints":{"allow":["POST"]}}}},{"subject":"Has olvidado tu contraseña","body":"Hola $$user.firstName,<br/><br/>Puedo ir al bano $$resetPasswordLink","id":"oel8ztfnm26ebKTMP1d7","language":"es","isDefault":false,"created":"2023-07-19T22:51:35.000Z","lastUpdated":"2023-07-19T22:51:35.000Z","_links":{"preview":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztfnm26ebKTMP1d7/preview","hints":{"allow":["GET"]}},"template":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword","hints":{"allow":["GET"]}},"settings":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/settings","hints":{"allow":["GET","PUT"]}},"self":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztfnm26ebKTMP1d7","hints":{"allow":["GET","PUT","DELETE"]}},"test":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/test","hints":{"allow":["POST"]}}}}]'
+        headers:
+            Content-Type:
+                - application/json
+            Date:
+                - Wed, 19 Jul 2023 22:51:37 GMT
+            Link:
+                - <https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations?limit=10>; rel="self"
+        status: 200 OK
+        code: 200
+        duration: 75.909486ms
+    - id: 11
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 0
+        transfer_encoding: []
+        trailer: {}
+        host: mm-oie-2022-10-07-max.oktapreview.com
+        remote_addr: ""
+        request_uri: ""
+        body: ""
+        form: {}
+        headers:
+            Accept:
+                - application/json
+            Authorization:
+                - SSWS REDACTED
+            User-Agent:
+                - okta-sdk-golang/3.0.0 golang/go1.20.6 darwin/amd64 okta-terraform/4.1.0
+        url: https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands
+        method: GET
+      response:
+        proto: HTTP/2.0
+        proto_major: 2
+        proto_minor: 0
+        transfer_encoding: []
+        trailer: {}
+        content_length: -1
+        uncompressed: true
+        body: '[{"id":"bnd5qwjvgpotf2LV51d7","name":"New Brand","removePoweredByOkta":true,"customPrivacyPolicyUrl":"https://example.com/privacy-policy-updated","agreeToCustomPrivacyPolicy":true,"isDefault":true,"defaultApp":{"appInstanceId":null,"appLinkName":null,"classicApplicationUri":null},"_links":{"themes":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd5qwjvgpotf2LV51d7/themes","hints":{"allow":["GET"]}},"self":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd5qwjvgpotf2LV51d7","hints":{"allow":["GET","PUT","DELETE"]}}}},{"id":"bnd8zt703iTQDr8u81d7","name":"www.example.com","removePoweredByOkta":false,"customPrivacyPolicyUrl":null,"agreeToCustomPrivacyPolicy":false,"isDefault":false,"defaultApp":{"appInstanceId":"0oa5qwjvixUgETvka1d7","appLinkName":null,"classicApplicationUri":null},"_links":{"themes":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/themes","hints":{"allow":["GET"]}},"self":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7","hints":{"allow":["GET","PUT","DELETE"]}}}}]'
+        headers:
+            Content-Type:
+                - application/json
+            Date:
+                - Wed, 19 Jul 2023 22:51:37 GMT
+            Link:
+                - <https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands?limit=20>; rel="self"
+        status: 200 OK
+        code: 200
+        duration: 69.682614ms
+    - id: 12
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 0
+        transfer_encoding: []
+        trailer: {}
+        host: mm-oie-2022-10-07-max.oktapreview.com
+        remote_addr: ""
+        request_uri: ""
+        body: ""
+        form: {}
+        headers:
+            Accept:
+                - application/json
+            Authorization:
+                - SSWS REDACTED
+            User-Agent:
+                - okta-sdk-golang/3.0.0 golang/go1.20.6 darwin/amd64 okta-terraform/4.1.0
+        url: https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations
+        method: GET
+      response:
+        proto: HTTP/2.0
+        proto_major: 2
+        proto_minor: 0
+        transfer_encoding: []
+        trailer: {}
+        content_length: -1
+        uncompressed: true
+        body: '[{"subject":"Forgot Password","body":"Hi $$user.firstName,<br/><br/>Blah blah $$resetPasswordLink","id":"oel8ztbhtqYQFijNs1d7","language":"en","isDefault":true,"created":"2023-07-19T22:51:35.000Z","lastUpdated":"2023-07-19T22:51:35.000Z","_links":{"preview":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztbhtqYQFijNs1d7/preview","hints":{"allow":["GET"]}},"template":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword","hints":{"allow":["GET"]}},"settings":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/settings","hints":{"allow":["GET","PUT"]}},"self":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztbhtqYQFijNs1d7","hints":{"allow":["GET","PUT","DELETE"]}},"test":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/test","hints":{"allow":["POST"]}}}},{"subject":"Has olvidado tu contraseña","body":"Hola $$user.firstName,<br/><br/>Puedo ir al bano $$resetPasswordLink","id":"oel8ztfnm26ebKTMP1d7","language":"es","isDefault":false,"created":"2023-07-19T22:51:35.000Z","lastUpdated":"2023-07-19T22:51:35.000Z","_links":{"preview":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztfnm26ebKTMP1d7/preview","hints":{"allow":["GET"]}},"template":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword","hints":{"allow":["GET"]}},"settings":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/settings","hints":{"allow":["GET","PUT"]}},"self":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztfnm26ebKTMP1d7","hints":{"allow":["GET","PUT","DELETE"]}},"test":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/test","hints":{"allow":["POST"]}}}}]'
+        headers:
+            Content-Type:
+                - application/json
+            Date:
+                - Wed, 19 Jul 2023 22:51:37 GMT
+            Link:
+                - <https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations?limit=10>; rel="self"
+        status: 200 OK
+        code: 200
+        duration: 73.225602ms
+    - id: 13
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 0
+        transfer_encoding: []
+        trailer: {}
+        host: mm-oie-2022-10-07-max.oktapreview.com
+        remote_addr: ""
+        request_uri: ""
+        body: ""
+        form: {}
+        headers:
+            Accept:
+                - application/json
+            Authorization:
+                - SSWS REDACTED
+            User-Agent:
+                - okta-sdk-golang/3.0.0 golang/go1.20.6 darwin/amd64 okta-terraform/4.1.0
+        url: https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations
+        method: GET
+      response:
+        proto: HTTP/2.0
+        proto_major: 2
+        proto_minor: 0
+        transfer_encoding: []
+        trailer: {}
+        content_length: -1
+        uncompressed: true
+        body: '[{"subject":"Forgot Password","body":"Hi $$user.firstName,<br/><br/>Blah blah $$resetPasswordLink","id":"oel8ztbhtqYQFijNs1d7","language":"en","isDefault":true,"created":"2023-07-19T22:51:35.000Z","lastUpdated":"2023-07-19T22:51:35.000Z","_links":{"preview":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztbhtqYQFijNs1d7/preview","hints":{"allow":["GET"]}},"template":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword","hints":{"allow":["GET"]}},"settings":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/settings","hints":{"allow":["GET","PUT"]}},"self":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztbhtqYQFijNs1d7","hints":{"allow":["GET","PUT","DELETE"]}},"test":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/test","hints":{"allow":["POST"]}}}},{"subject":"Has olvidado tu contraseña","body":"Hola $$user.firstName,<br/><br/>Puedo ir al bano $$resetPasswordLink","id":"oel8ztfnm26ebKTMP1d7","language":"es","isDefault":false,"created":"2023-07-19T22:51:35.000Z","lastUpdated":"2023-07-19T22:51:35.000Z","_links":{"preview":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztfnm26ebKTMP1d7/preview","hints":{"allow":["GET"]}},"template":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword","hints":{"allow":["GET"]}},"settings":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/settings","hints":{"allow":["GET","PUT"]}},"self":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztfnm26ebKTMP1d7","hints":{"allow":["GET","PUT","DELETE"]}},"test":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/test","hints":{"allow":["POST"]}}}}]'
+        headers:
+            Content-Type:
+                - application/json
+            Date:
+                - Wed, 19 Jul 2023 22:51:37 GMT
+            Link:
+                - <https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations?limit=10>; rel="self"
+        status: 200 OK
+        code: 200
+        duration: 62.220658ms
+    - id: 14
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 0
+        transfer_encoding: []
+        trailer: {}
+        host: mm-oie-2022-10-07-max.oktapreview.com
+        remote_addr: ""
+        request_uri: ""
+        body: ""
+        form: {}
+        headers:
+            Accept:
+                - application/json
+            Authorization:
+                - SSWS REDACTED
+            User-Agent:
+                - okta-sdk-golang/3.0.0 golang/go1.20.6 darwin/amd64 okta-terraform/4.1.0
+        url: https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztfnm26ebKTMP1d7
+        method: DELETE
+      response:
+        proto: HTTP/2.0
+        proto_major: 2
+        proto_minor: 0
+        transfer_encoding: []
+        trailer: {}
+        content_length: 0
+        uncompressed: false
+        body: ""
+        headers:
+            Date:
+                - Wed, 19 Jul 2023 22:51:38 GMT
+        status: 204 No Content
+        code: 204
+        duration: 80.924417ms
+    - id: 15
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 0
+        transfer_encoding: []
+        trailer: {}
+        host: mm-oie-2022-10-07-max.oktapreview.com
+        remote_addr: ""
+        request_uri: ""
+        body: ""
+        form: {}
+        headers:
+            Accept:
+                - application/json
+            Authorization:
+                - SSWS REDACTED
+            User-Agent:
+                - okta-sdk-golang/3.0.0 golang/go1.20.6 darwin/amd64 okta-terraform/4.1.0
+        url: https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations
+        method: GET
+      response:
+        proto: HTTP/2.0
+        proto_major: 2
+        proto_minor: 0
+        transfer_encoding: []
+        trailer: {}
+        content_length: -1
+        uncompressed: true
+        body: '[{"subject":"Forgot Password","body":"Hi $$user.firstName,<br/><br/>Blah blah $$resetPasswordLink","id":"oel8ztbhtqYQFijNs1d7","language":"en","isDefault":true,"created":"2023-07-19T22:51:35.000Z","lastUpdated":"2023-07-19T22:51:35.000Z","_links":{"preview":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztbhtqYQFijNs1d7/preview","hints":{"allow":["GET"]}},"template":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword","hints":{"allow":["GET"]}},"settings":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/settings","hints":{"allow":["GET","PUT"]}},"self":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations/oel8ztbhtqYQFijNs1d7","hints":{"allow":["GET","PUT","DELETE"]}},"test":{"href":"https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/test","hints":{"allow":["POST"]}}}}]'
+        headers:
+            Content-Type:
+                - application/json
+            Date:
+                - Wed, 19 Jul 2023 22:51:38 GMT
+            Link:
+                - <https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations?limit=10>; rel="self"
+        status: 200 OK
+        code: 200
+        duration: 69.105561ms
+    - id: 16
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 0
+        transfer_encoding: []
+        trailer: {}
+        host: mm-oie-2022-10-07-max.oktapreview.com
+        remote_addr: ""
+        request_uri: ""
+        body: ""
+        form: {}
+        headers:
+            Accept:
+                - application/json
+            Authorization:
+                - SSWS REDACTED
+            User-Agent:
+                - okta-sdk-golang/3.0.0 golang/go1.20.6 darwin/amd64 okta-terraform/4.1.0
+        url: https://mm-oie-2022-10-07-max.oktapreview.com/api/v1/brands/bnd8zt703iTQDr8u81d7/templates/email/ForgotPassword/customizations
+        method: DELETE
+      response:
+        proto: HTTP/2.0
+        proto_major: 2
+        proto_minor: 0
+        transfer_encoding: []
+        trailer: {}
+        content_length: 0
+        uncompressed: false
+        body: ""
+        headers:
+            Date:
+                - Wed, 19 Jul 2023 22:51:38 GMT
+        status: 204 No Content
+        code: 204
+        duration: 80.464804ms
