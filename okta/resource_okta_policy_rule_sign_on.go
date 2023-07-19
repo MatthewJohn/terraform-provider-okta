@@ -74,7 +74,6 @@ func resourcePolicySignOnRule() *schema.Resource {
 				Type:        schema.TypeString,
 				Optional:    true,
 				Description: "Risc level: ANY, LOW, MEDIUM or HIGH",
-				Default:     "ANY",
 			},
 			"behaviors": {
 				Type:        schema.TypeSet,
