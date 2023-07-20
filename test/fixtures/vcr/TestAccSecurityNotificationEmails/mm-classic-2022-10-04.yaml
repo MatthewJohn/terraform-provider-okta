@@ -1,0 +1,242 @@
+---
+version: 2
+interactions:
+    - id: 0
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 200
+        transfer_encoding: []
+        trailer: {}
+        host: mm-classic-2022-10-04-admin.oktapreview.com
+        remote_addr: ""
+        request_uri: ""
+        body: |
+            {"sendEmailForNewDeviceEnabled":true,"sendEmailForFactorEnrollmentEnabled":true,"sendEmailForFactorResetEnabled":true,"sendEmailForPasswordChangedEnabled":true,"reportSuspiciousActivityEnabled":true}
+        form: {}
+        headers:
+            Authorization:
+                - SSWS REDACTED
+            Content-Type:
+                - application/json
+        url: https://mm-classic-2022-10-04.oktapreview.com/api/internal/org/settings/security-notification-settings
+        method: PUT
+      response:
+        proto: HTTP/2.0
+        proto_major: 2
+        proto_minor: 0
+        transfer_encoding: []
+        trailer: {}
+        content_length: -1
+        uncompressed: false
+        body: '{"sendEmailForNewDeviceEnabled":true,"sendEmailForFactorEnrollmentEnabled":true,"sendEmailForFactorResetEnabled":true,"sendEmailForPasswordChangedEnabled":true,"reportSuspiciousActivityEnabled":true,"customizedEmailsList":[],"customizedEmailsWithReportButtonList":[]}'
+        headers:
+            Content-Security-Policy-Report-Only:
+                - 'default-src ''self'' mm-classic-2022-10-04.oktapreview.com *.oktacdn.com; connect-src ''self'' mm-classic-2022-10-04.oktapreview.com mm-classic-2022-10-04-admin.oktapreview.com *.oktacdn.com *.mixpanel.com *.mapbox.com app.pendo.io data.pendo.io pendo-static-5634101834153984.storage.googleapis.com pendo-static-5391521872216064.storage.googleapis.com *.mtls.oktapreview.com mm-classic-2022-10-04.kerberos.oktapreview.com https://oinmanager.okta.com data:; script-src ''unsafe-inline'' ''nonce-lDBmnw_yKNsdtSsdUwZq5Z77dZdMiMLCZPwsvH3a8LE'' ''unsafe-eval'' ''self'' mm-classic-2022-10-04.oktapreview.com *.oktacdn.com blob:; style-src ''unsafe-inline'' ''self'' mm-classic-2022-10-04.oktapreview.com *.oktacdn.com app.pendo.io cdn.pendo.io pendo-static-5634101834153984.storage.googleapis.com pendo-static-5391521872216064.storage.googleapis.com; frame-src ''self'' mm-classic-2022-10-04.oktapreview.com mm-classic-2022-10-04-admin.oktapreview.com login.okta.com; img-src ''self'' mm-classic-2022-10-04.oktapreview.com *.oktacdn.com *.tiles.mapbox.com *.mapbox.com app.pendo.io data.pendo.io cdn.pendo.io pendo-static-5634101834153984.storage.googleapis.com pendo-static-5391521872216064.storage.googleapis.com data: blob:; font-src ''self'' mm-classic-2022-10-04.oktapreview.com data: *.oktacdn.com fonts.gstatic.com; frame-ancestors ''self'''
+            Content-Type:
+                - application/json
+            Date:
+                - Thu, 20 Jul 2023 00:32:41 GMT
+        status: 200 OK
+        code: 200
+        duration: 2.924829728s
+    - id: 1
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 0
+        transfer_encoding: []
+        trailer: {}
+        host: mm-classic-2022-10-04-admin.oktapreview.com
+        remote_addr: ""
+        request_uri: ""
+        body: ""
+        form: {}
+        headers:
+            Authorization:
+                - SSWS REDACTED
+            Content-Type:
+                - application/json
+        url: https://mm-classic-2022-10-04.oktapreview.com/api/internal/org/settings/security-notification-settings
+        method: GET
+      response:
+        proto: HTTP/2.0
+        proto_major: 2
+        proto_minor: 0
+        transfer_encoding: []
+        trailer: {}
+        content_length: -1
+        uncompressed: false
+        body: '{"sendEmailForNewDeviceEnabled":true,"sendEmailForFactorEnrollmentEnabled":true,"sendEmailForFactorResetEnabled":true,"sendEmailForPasswordChangedEnabled":true,"reportSuspiciousActivityEnabled":true,"customizedEmailsList":[],"customizedEmailsWithReportButtonList":[]}'
+        headers:
+            Content-Security-Policy-Report-Only:
+                - 'default-src ''self'' mm-classic-2022-10-04.oktapreview.com *.oktacdn.com; connect-src ''self'' mm-classic-2022-10-04.oktapreview.com mm-classic-2022-10-04-admin.oktapreview.com *.oktacdn.com *.mixpanel.com *.mapbox.com app.pendo.io data.pendo.io pendo-static-5634101834153984.storage.googleapis.com pendo-static-5391521872216064.storage.googleapis.com *.mtls.oktapreview.com mm-classic-2022-10-04.kerberos.oktapreview.com https://oinmanager.okta.com data:; script-src ''unsafe-inline'' ''nonce-YyJSUwmQ4s_TN4pd5C2Ledr0rj5rWty9RDAc3ve5Ehw'' ''unsafe-eval'' ''self'' mm-classic-2022-10-04.oktapreview.com *.oktacdn.com blob:; style-src ''unsafe-inline'' ''self'' mm-classic-2022-10-04.oktapreview.com *.oktacdn.com app.pendo.io cdn.pendo.io pendo-static-5634101834153984.storage.googleapis.com pendo-static-5391521872216064.storage.googleapis.com; frame-src ''self'' mm-classic-2022-10-04.oktapreview.com mm-classic-2022-10-04-admin.oktapreview.com login.okta.com; img-src ''self'' mm-classic-2022-10-04.oktapreview.com *.oktacdn.com *.tiles.mapbox.com *.mapbox.com app.pendo.io data.pendo.io cdn.pendo.io pendo-static-5634101834153984.storage.googleapis.com pendo-static-5391521872216064.storage.googleapis.com data: blob:; font-src ''self'' mm-classic-2022-10-04.oktapreview.com data: *.oktacdn.com fonts.gstatic.com; frame-ancestors ''self'''
+            Content-Type:
+                - application/json
+            Date:
+                - Thu, 20 Jul 2023 00:32:46 GMT
+        status: 200 OK
+        code: 200
+        duration: 1.866076251s
+    - id: 2
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 0
+        transfer_encoding: []
+        trailer: {}
+        host: mm-classic-2022-10-04-admin.oktapreview.com
+        remote_addr: ""
+        request_uri: ""
+        body: ""
+        form: {}
+        headers:
+            Authorization:
+                - SSWS REDACTED
+            Content-Type:
+                - application/json
+        url: https://mm-classic-2022-10-04.oktapreview.com/api/internal/org/settings/security-notification-settings
+        method: GET
+      response:
+        proto: HTTP/2.0
+        proto_major: 2
+        proto_minor: 0
+        transfer_encoding: []
+        trailer: {}
+        content_length: -1
+        uncompressed: false
+        body: '{"sendEmailForNewDeviceEnabled":true,"sendEmailForFactorEnrollmentEnabled":true,"sendEmailForFactorResetEnabled":true,"sendEmailForPasswordChangedEnabled":true,"reportSuspiciousActivityEnabled":true,"customizedEmailsList":[],"customizedEmailsWithReportButtonList":[]}'
+        headers:
+            Content-Security-Policy-Report-Only:
+                - 'default-src ''self'' mm-classic-2022-10-04.oktapreview.com *.oktacdn.com; connect-src ''self'' mm-classic-2022-10-04.oktapreview.com mm-classic-2022-10-04-admin.oktapreview.com *.oktacdn.com *.mixpanel.com *.mapbox.com app.pendo.io data.pendo.io pendo-static-5634101834153984.storage.googleapis.com pendo-static-5391521872216064.storage.googleapis.com *.mtls.oktapreview.com mm-classic-2022-10-04.kerberos.oktapreview.com https://oinmanager.okta.com data:; script-src ''unsafe-inline'' ''nonce-S_OBWQPOohRbHBIvIuKaWidQpAUmpkfyMhsUwrRvlrI'' ''unsafe-eval'' ''self'' mm-classic-2022-10-04.oktapreview.com *.oktacdn.com blob:; style-src ''unsafe-inline'' ''self'' mm-classic-2022-10-04.oktapreview.com *.oktacdn.com app.pendo.io cdn.pendo.io pendo-static-5634101834153984.storage.googleapis.com pendo-static-5391521872216064.storage.googleapis.com; frame-src ''self'' mm-classic-2022-10-04.oktapreview.com mm-classic-2022-10-04-admin.oktapreview.com login.okta.com; img-src ''self'' mm-classic-2022-10-04.oktapreview.com *.oktacdn.com *.tiles.mapbox.com *.mapbox.com app.pendo.io data.pendo.io cdn.pendo.io pendo-static-5634101834153984.storage.googleapis.com pendo-static-5391521872216064.storage.googleapis.com data: blob:; font-src ''self'' mm-classic-2022-10-04.oktapreview.com data: *.oktacdn.com fonts.gstatic.com; frame-ancestors ''self'''
+            Content-Type:
+                - application/json
+            Date:
+                - Thu, 20 Jul 2023 00:32:50 GMT
+        status: 200 OK
+        code: 200
+        duration: 1.810499457s
+    - id: 3
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 201
+        transfer_encoding: []
+        trailer: {}
+        host: mm-classic-2022-10-04-admin.oktapreview.com
+        remote_addr: ""
+        request_uri: ""
+        body: |
+            {"sendEmailForNewDeviceEnabled":true,"sendEmailForFactorEnrollmentEnabled":false,"sendEmailForFactorResetEnabled":true,"sendEmailForPasswordChangedEnabled":true,"reportSuspiciousActivityEnabled":true}
+        form: {}
+        headers:
+            Authorization:
+                - SSWS REDACTED
+            Content-Type:
+                - application/json
+        url: https://mm-classic-2022-10-04.oktapreview.com/api/internal/org/settings/security-notification-settings
+        method: PUT
+      response:
+        proto: HTTP/2.0
+        proto_major: 2
+        proto_minor: 0
+        transfer_encoding: []
+        trailer: {}
+        content_length: -1
+        uncompressed: false
+        body: '{"sendEmailForNewDeviceEnabled":true,"sendEmailForFactorEnrollmentEnabled":false,"sendEmailForFactorResetEnabled":true,"sendEmailForPasswordChangedEnabled":true,"reportSuspiciousActivityEnabled":true,"customizedEmailsList":[],"customizedEmailsWithReportButtonList":[]}'
+        headers:
+            Content-Security-Policy-Report-Only:
+                - 'default-src ''self'' mm-classic-2022-10-04.oktapreview.com *.oktacdn.com; connect-src ''self'' mm-classic-2022-10-04.oktapreview.com mm-classic-2022-10-04-admin.oktapreview.com *.oktacdn.com *.mixpanel.com *.mapbox.com app.pendo.io data.pendo.io pendo-static-5634101834153984.storage.googleapis.com pendo-static-5391521872216064.storage.googleapis.com *.mtls.oktapreview.com mm-classic-2022-10-04.kerberos.oktapreview.com https://oinmanager.okta.com data:; script-src ''unsafe-inline'' ''nonce-XYbNOzuHUFDDAxTy-T9_9Pyp6qNjJEmxnuRLXD_g3O4'' ''unsafe-eval'' ''self'' mm-classic-2022-10-04.oktapreview.com *.oktacdn.com blob:; style-src ''unsafe-inline'' ''self'' mm-classic-2022-10-04.oktapreview.com *.oktacdn.com app.pendo.io cdn.pendo.io pendo-static-5634101834153984.storage.googleapis.com pendo-static-5391521872216064.storage.googleapis.com; frame-src ''self'' mm-classic-2022-10-04.oktapreview.com mm-classic-2022-10-04-admin.oktapreview.com login.okta.com; img-src ''self'' mm-classic-2022-10-04.oktapreview.com *.oktacdn.com *.tiles.mapbox.com *.mapbox.com app.pendo.io data.pendo.io cdn.pendo.io pendo-static-5634101834153984.storage.googleapis.com pendo-static-5391521872216064.storage.googleapis.com data: blob:; font-src ''self'' mm-classic-2022-10-04.oktapreview.com data: *.oktacdn.com fonts.gstatic.com; frame-ancestors ''self'''
+            Content-Type:
+                - application/json
+            Date:
+                - Thu, 20 Jul 2023 00:32:55 GMT
+        status: 200 OK
+        code: 200
+        duration: 2.480115802s
+    - id: 4
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 0
+        transfer_encoding: []
+        trailer: {}
+        host: mm-classic-2022-10-04-admin.oktapreview.com
+        remote_addr: ""
+        request_uri: ""
+        body: ""
+        form: {}
+        headers:
+            Authorization:
+                - SSWS REDACTED
+            Content-Type:
+                - application/json
+        url: https://mm-classic-2022-10-04.oktapreview.com/api/internal/org/settings/security-notification-settings
+        method: GET
+      response:
+        proto: HTTP/2.0
+        proto_major: 2
+        proto_minor: 0
+        transfer_encoding: []
+        trailer: {}
+        content_length: -1
+        uncompressed: false
+        body: '{"sendEmailForNewDeviceEnabled":true,"sendEmailForFactorEnrollmentEnabled":false,"sendEmailForFactorResetEnabled":true,"sendEmailForPasswordChangedEnabled":true,"reportSuspiciousActivityEnabled":true,"customizedEmailsList":[],"customizedEmailsWithReportButtonList":[]}'
+        headers:
+            Content-Security-Policy-Report-Only:
+                - 'default-src ''self'' mm-classic-2022-10-04.oktapreview.com *.oktacdn.com; connect-src ''self'' mm-classic-2022-10-04.oktapreview.com mm-classic-2022-10-04-admin.oktapreview.com *.oktacdn.com *.mixpanel.com *.mapbox.com app.pendo.io data.pendo.io pendo-static-5634101834153984.storage.googleapis.com pendo-static-5391521872216064.storage.googleapis.com *.mtls.oktapreview.com mm-classic-2022-10-04.kerberos.oktapreview.com https://oinmanager.okta.com data:; script-src ''unsafe-inline'' ''nonce-fJDN0lsAsj-V0BNgX2bhe6QiypEDQ5dXqbcYlmc0Hco'' ''unsafe-eval'' ''self'' mm-classic-2022-10-04.oktapreview.com *.oktacdn.com blob:; style-src ''unsafe-inline'' ''self'' mm-classic-2022-10-04.oktapreview.com *.oktacdn.com app.pendo.io cdn.pendo.io pendo-static-5634101834153984.storage.googleapis.com pendo-static-5391521872216064.storage.googleapis.com; frame-src ''self'' mm-classic-2022-10-04.oktapreview.com mm-classic-2022-10-04-admin.oktapreview.com login.okta.com; img-src ''self'' mm-classic-2022-10-04.oktapreview.com *.oktacdn.com *.tiles.mapbox.com *.mapbox.com app.pendo.io data.pendo.io cdn.pendo.io pendo-static-5634101834153984.storage.googleapis.com pendo-static-5391521872216064.storage.googleapis.com data: blob:; font-src ''self'' mm-classic-2022-10-04.oktapreview.com data: *.oktacdn.com fonts.gstatic.com; frame-ancestors ''self''; report-uri https://oktacsp.report-uri.com/r/t/csp/reportOnly; report-to csp'
+            Content-Type:
+                - application/json
+            Date:
+                - Thu, 20 Jul 2023 00:32:59 GMT
+            Report-To:
+                - '{"group":"csp","max_age":31536000,"endpoints":[{"url":"https://oktacsp.report-uri.com/a/t/g"}],"include_subdomains":true}'
+        status: 200 OK
+        code: 200
+        duration: 1.931716786s
+    - id: 5
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 200
+        transfer_encoding: []
+        trailer: {}
+        host: mm-classic-2022-10-04-admin.oktapreview.com
+        remote_addr: ""
+        request_uri: ""
+        body: |
+            {"sendEmailForNewDeviceEnabled":true,"sendEmailForFactorEnrollmentEnabled":true,"sendEmailForFactorResetEnabled":true,"sendEmailForPasswordChangedEnabled":true,"reportSuspiciousActivityEnabled":true}
+        form: {}
+        headers:
+            Authorization:
+                - SSWS REDACTED
+            Content-Type:
+                - application/json
+        url: https://mm-classic-2022-10-04.oktapreview.com/api/internal/org/settings/security-notification-settings
+        method: PUT
+      response:
+        proto: HTTP/2.0
+        proto_major: 2
+        proto_minor: 0
+        transfer_encoding: []
+        trailer: {}
+        content_length: -1
+        uncompressed: false
+        body: '{"sendEmailForNewDeviceEnabled":true,"sendEmailForFactorEnrollmentEnabled":true,"sendEmailForFactorResetEnabled":true,"sendEmailForPasswordChangedEnabled":true,"reportSuspiciousActivityEnabled":true,"customizedEmailsList":[],"customizedEmailsWithReportButtonList":[]}'
+        headers:
+            Content-Security-Policy-Report-Only:
+                - 'default-src ''self'' mm-classic-2022-10-04.oktapreview.com *.oktacdn.com; connect-src ''self'' mm-classic-2022-10-04.oktapreview.com mm-classic-2022-10-04-admin.oktapreview.com *.oktacdn.com *.mixpanel.com *.mapbox.com app.pendo.io data.pendo.io pendo-static-5634101834153984.storage.googleapis.com pendo-static-5391521872216064.storage.googleapis.com *.mtls.oktapreview.com mm-classic-2022-10-04.kerberos.oktapreview.com https://oinmanager.okta.com data:; script-src ''unsafe-inline'' ''nonce-akYLCuSn_yqhF-tqHmEOTgKwTHajYBzptieqAYMSCQc'' ''unsafe-eval'' ''self'' mm-classic-2022-10-04.oktapreview.com *.oktacdn.com blob:; style-src ''unsafe-inline'' ''self'' mm-classic-2022-10-04.oktapreview.com *.oktacdn.com app.pendo.io cdn.pendo.io pendo-static-5634101834153984.storage.googleapis.com pendo-static-5391521872216064.storage.googleapis.com; frame-src ''self'' mm-classic-2022-10-04.oktapreview.com mm-classic-2022-10-04-admin.oktapreview.com login.okta.com; img-src ''self'' mm-classic-2022-10-04.oktapreview.com *.oktacdn.com *.tiles.mapbox.com *.mapbox.com app.pendo.io data.pendo.io cdn.pendo.io pendo-static-5634101834153984.storage.googleapis.com pendo-static-5391521872216064.storage.googleapis.com data: blob:; font-src ''self'' mm-classic-2022-10-04.oktapreview.com data: *.oktacdn.com fonts.gstatic.com; frame-ancestors ''self'''
+            Content-Type:
+                - application/json
+            Date:
+                - Thu, 20 Jul 2023 00:33:04 GMT
+        status: 200 OK
+        code: 200
+        duration: 2.712411417s
